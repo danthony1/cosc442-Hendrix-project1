@@ -2,7 +2,18 @@ package edu.towson.cis.cosc442.project1.monopoly;
 
 public abstract class Cell implements IOwnable {
 	private String name;
+	
+	/**
+	 * the variable 'owner' is now 'theOwner'
+	 *  and set/getOwner are now 
+	 *  set/getTheOwner. */
 	protected Player theOwner;
+	
+	/** 
+	 * an push down sent this variable to 
+	 * each of the children while the 
+	 * pull up brought it up to the super
+	 * class. */
 	private boolean available = true;
 
 	/* (non-Javadoc)
@@ -31,9 +42,11 @@ public abstract class Cell implements IOwnable {
 
 	/* (non-Javadoc)
 	 * @see edu.towson.cis.cosc442.project1.monopoly.IOwnable#playAction()
+	 * the void playAction() is now
+	 * boolean playAction(String msg)
 	 */
 	@Override
-	public abstract void playAction();
+	public abstract boolean playAction(String msg);
 
 	void setName(String name) {
 		this.name = name;

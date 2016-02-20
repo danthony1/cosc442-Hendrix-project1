@@ -18,6 +18,10 @@ public class CardsTest extends TestCase {
         gameMaster.getGameBoard().addCard(ccCard);
     }
     
+    /**
+     * I checked how changing Chance to CC
+     * caused a failure in the JUnit
+     */
     public void testCardType() {
         gameMaster.drawCCCard();
         assertEquals(Card.TYPE_CC, ccCard.getCardType());

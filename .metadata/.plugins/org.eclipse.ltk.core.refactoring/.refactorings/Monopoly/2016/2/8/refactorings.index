@@ -4,3 +4,4 @@
 1455911196341	Extract interface 'IOwnable'
 1455928372031	Extract method 'rentLoop'
 1455928638219	Extract local variable 'colorGroup'
+1455939714415	Change method 'playAction'
