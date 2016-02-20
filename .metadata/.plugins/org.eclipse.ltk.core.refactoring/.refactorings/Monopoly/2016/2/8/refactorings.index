@@ -3,3 +3,4 @@
 1455902762883	Pull up members to 'Cell'
 1455911196341	Extract interface 'IOwnable'
 1455928372031	Extract method 'rentLoop'
+1455928638219	Extract local variable 'colorGroup'
